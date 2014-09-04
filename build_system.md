@@ -5,9 +5,9 @@ usage of JioCloud's automated integration, testing, and deployment frameworks.
 
 ## What is CI/CD?
 
-CI/CD ( [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) and [continuos delivery](http://en.wikipedia.org/wiki/Continuous_delivery) ) are
+CI/CD ( [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) and [continuous delivery](http://en.wikipedia.org/wiki/Continuous_delivery) ) are
 practices through which changes to code repositories are automatically integrated,
-verified, and deployed (also called continuos deployment).
+verified, and deployed (also called continuous deployment).
 
 # Architecture Overview
 
@@ -21,7 +21,7 @@ It's easier to understand many of the design decisions made for this project
 within the context of our guiding design principals.
 
 1. Automate everything - Humans make too many mistakes to have them perform
-   any manual repetitve tasks. Automating tasks also allows them to scale.
+   any manual repetitive tasks. Automating tasks also allows them to scale.
 
 2. No one should ever make any adhoc modification to our cloud systems. This
    leads to risk that certain systems can wind up in an inconsistent state.
@@ -29,7 +29,7 @@ within the context of our guiding design principals.
 
 3. Stay as close to master as possible - The closer you are to master, the
    less code you need to deploy to stay up-to-date. This should limit the
-   likelyhood that any changeset will lead to a failure.
+   likelihood that any changeset will lead to a failure.
 
 4. Tests are the gateway for code getting deployed. We have to fully trust
    our automated tests in order to validate that our services are running
@@ -87,7 +87,7 @@ by Canonical.
 ## Puppet
 
 Puppet will be responsible for the configuration of each individual machine into
-it's desired roles.
+its desired roles.
 
 For example, if a machine needed to be configured as a database, Puppet is responsible for the logic involved in converting a machine into this role.
 
@@ -106,7 +106,7 @@ with the existing openstack-infra project.
 ## Developing on CI/CD framework
 
 It is recommended that you test all changes for the CI/CD framework
-locally to avoid the likelyhood of pushing code that may disrupt the
+locally to avoid the likelihood of pushing code that may disrupt the
 function of the CI/CD system.
 
 ## CI/CD components
